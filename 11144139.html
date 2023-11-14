@@ -13,18 +13,19 @@
 <body>
   <header>
       <h1>MyWebsite 個人網站</h1>
-    </header>
+  </header>
 
   
 
-    <nav>
-      <a href="#about">&nbsp About me &nbsp;</a>
-      <a href="#skill">&nbsp 專業技能 &nbsp;</a>
-      <a href="#project">&nbsp 大學成果 &nbsp;</a>
-      <a href="#school">&nbsp 學習經歷 &nbsp;</a>
-      <a href="#internship">&nbsp 實習經歷 &nbsp;</a>
-      <a href="#contact">&nbsp 聯絡資訊 &nbsp;</a>
-    </nav>
+  <nav>
+    <a href="#about" onclick="scrollToSection('about')">About me</a>
+    <a href="#skill" onclick="scrollToSection('skill')">專業技能</a>
+    <a href="#project" onclick="scrollToSection('project')">大學成果</a>
+    <a href="#school" onclick="scrollToSection('school')">學習經歷</a>
+    <a href="#internship" onclick="scrollToSection('internship')">實習經歷</a>
+    <a href="#contact" onclick="scrollToSection('contact')">聯絡資訊</a>
+  </nav>
+  
 
     <main>
     <article>
@@ -53,47 +54,87 @@
             </p>
         </div>
        </div>
-<!--進度條-->
-        <section id="skill" class="card">
-          <h2>專業技能</h2>
-          <img src="https://picsum.photos/300/200?random=1" />
-          <p>
-            JAVA
-          </p>
-          <p>
-              Python
-          </p>
-          <p>
-              HTML
-          </p>
-        </section>
+      </section>
 
-        <section id="project" class="card">
-          <h2>大學成果</h2>
-          <img src="https://picsum.photos/300/200?random=2" />
-          <p>
-              大一上：這下好啦
-          </p>
-          <p>
-              大一下：水蜜桃
-          </p>
-        </section>
+<!--進度條-->
+      <section id="skill" class="card">
+        <h2>專業技能</h2>
+        <div class="container">   
+          <h3>JAVA</h3> 
+          <div class="progress2 progress-moved">
+            <div class="progress-bar1" >
+              <span class="text1">75%</span>
+            </div>                       
+          </div> 
+          <h3>Python</h3>
+          <div class="progress2 progress-moved">
+            <div class="progress-bar2" >
+              <span class="text1">65%</span>
+            </div>                       
+          </div> 
+          <h3>HTML/CSS</h3>
+          <div class="progress2 progress-moved">
+            <div class="progress-bar3" >
+              <span class="text1">80%</span>
+            </div>                       
+          </div> 
+        </div>
+      </section>
+
+      <section id="project" class="card">
+        <h2>大學成果</h2>
+        <img src="https://picsum.photos/300/200?random=2" />
+        <p>
+            大一上：這下好啦
+        </p>
+        <p>
+            大一下：水蜜桃
+        </p>
+      </section>
         
-        <section id="school" class="card">
-          <h2>高中學習經歷</h2>
-              <img src="https://picsum.photos/300/200?random=2" />
-              <p>
-                  我高中的東東
-               </p>
-       </section>
-     
-       <section id="internship" class="card">
-          <h2>實習經驗</h2>
-           <img src="https://picsum.photos/300/200?random=2" />
+      <section id="school" class="card">
+        <h2>高中學習經歷</h2>
+            <img class="" src="https://picsum.photos/300/200?random=2" />
             <p>
-              暑假實習經驗和成果
+                我高中的東東
+             </p>
+      </section>
+     
+      <section id="internship" class="card">
+        <h2>實習經驗</h2>
+        <img class="internship_img" src="image/internship.jpg" />
+        <h3>暑假實習證明單</h3>
+        <p class="show-info">
+          暑假實習心得
+          
+        </p>
+      </section>
+    </article>
+    <aside id="contact" class="card1">
+      <h2>我的聯絡方式</h2>
+      <p><h3>LINE</h3>
+      <a href="https://line.me/ti/p/qyxDD-Ia9m " target="_blank">
+        <img class="buttom_img" src="image/buttom_img1.jpg">
+      </a>
+      </p>
+      <p><h3>FaceBook</h3>
+        <a href="https://www.facebook.com/profile.php?id=100012407676506&mibextid=LQQJ4d" target="_blank">
+          <img class="buttom_img" src="image/buttom_img2.jpg">
+        </a>
+        </p>
+        <p><h3>Instagram</h3>
+          <a href="https://instagram.com/anitakao6321?igshid=MTJtYWg1bnN6YzFzdg==&utm_source=qr" target="_blank">
+            <img class="buttom_img" src="image/buttom_img3.jpg">
+          </a>
           </p>
-      </section>>
+        <p><h3>G-Mail</h3>
+          <a href="mailto:anitakao6321@gmail.com" target="_blank">
+            <img class="buttom_img" src="image/buttom_img4.jpg">
+          </a>
+          </p>
+
+
+    </aside>
     </main>
     <div class="clearfix"></div>
 
@@ -101,10 +142,6 @@
       <h5>Copyrgiht @ 2022 All rights reserved</h5>
       <h5 class="contact1">My E-mail : <mailto:anitakao6321@gmail.com>anitakao6321@gmail.com</mailto:anitakao6321@gmail.com></h5>
     </footer>
-  </article>
-
-
-
 </body>
 </html>
 <!--<body>

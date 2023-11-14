@@ -12,6 +12,7 @@ body {
     margin: 0px;
 }
 
+
 header {
     background-color: #878a5d;
     color: white;
@@ -41,6 +42,8 @@ nav a:hover {
     color: white;
 }
 
+
+
 h2{
     font-family: 'Edu TAS Beginner', cursive;
 }
@@ -59,7 +62,8 @@ main {
 .card {
     /*background-color: white;*/
     padding: 20px;
-    margin: 20px 10px;
+    width: 100%;
+    margin: 10px;
     border-radius: 15px;
     background-image: url(image/card_img.jpg);
     background-size: cover;
@@ -67,6 +71,20 @@ main {
 }
 
 .card img{
+    display: block;
+    margin: 0 auto;
+}
+
+.card1 {
+    /*background-color: white;*/
+    padding: 20px;
+    margin: 20px 10px;
+    border-radius: 15px;
+    background-image: url(image/card_img.jpg);
+    background-size: cover;
+}
+
+.card1 img{
     display: block;
     margin: 0 auto;
 }
@@ -84,14 +102,109 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .interest-text:hover {
-    color: #004466; /* 滑鼠懸停時的顏色 */
-    cursor: pointer; /* 讓鼠標顯示為手型，表示可以點擊 */
+    color: #004466; 
+    cursor: pointer; 
 }
+
+.container {
+    padding: 10px auto;
+    margin: 100px auto;
+    width: 80%;
+    text-align: center;
+  }
+
+  .text1{
+    font-family: 'Edu TAS Beginner', cursive;
+    color: white;
+  }
+
+  h3{
+    font-family: 'Edu TAS Beginner', cursive;
+  }
+
+  .progress2 {
+    padding: 6px;
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+  }
+
+  .progress-bar1 {
+    height: 18px;
+    border-radius: 15px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+    transition: 0.4s linear;
+    transition-property: width, background-color;
+  }
+   
+  .progress-moved .progress-bar1 {
+    width: 75%;
+    background-color: #35523c;
+    animation: progressAnimation 6s;
+  }
+   
+  .progress-bar2 {
+    height: 18px;
+    border-radius: 15px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+    transition: 0.4s linear;
+    transition-property: width, background-color;
+  }
+   
+  .progress-moved .progress-bar2 {
+    width: 65%;
+    background-color: #35523c;
+    animation: progressAnimation 6s;
+  }
+
+  .progress-bar3 {
+    height: 18px;
+    border-radius: 15px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+    transition: 0.4s linear;
+    transition-property: width, background-color;
+  }
+   
+  .progress-moved .progress-bar3 {
+    width: 80%;
+    background-color: #35523c;
+    animation: progressAnimation 6s;
+  }
+   
+@keyframes progressAnimation {
+    0% {
+      width: 5%;
+      background-color: #cada72;
+    }
+    100% {
+      width: 80%;
+      background-color: #35523c;
+    }
+  }
 
 
 .self{
     font-family: 'Edu TAS Beginner', cursive;
 }
+.internship_img{
+    width: 60%;
+    height: 80%;
+}
+
+.info-box {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 1;
+  }
+  
+  .show-info:hover + .info-box {
+    display: block;
+  }
+  
+
 
 article {
     float: left;
@@ -103,6 +216,15 @@ aside {
     width: 25%;
     text-align: center;
 }
+
+.buttom_img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+
+
 
 .clearfix {
     clear: both;
@@ -118,7 +240,8 @@ aside {
 
     .card {
         padding: 10px;
-        margin: 15px 0px;
+        margin: 0 auto;
+        margin-bottom: 20px;
     }
 
     image {
@@ -128,4 +251,8 @@ aside {
 
     }
 
+    .button_img3{
+        max-width: 50px;
+        height: auto;
+    }
 }
