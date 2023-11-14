@@ -42,7 +42,9 @@ nav a:hover {
     color: white;
 }
 
-
+p{
+    font-family: 'Edu TAS Beginner', cursive;
+}
 
 h2{
     font-family: 'Edu TAS Beginner', cursive;
@@ -58,6 +60,51 @@ footer {
 main {
     padding: 20px;
 }
+
+.project{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+  
+  .image-combine {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .image-combine img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* 新增的樣式 */
+  .image-combine img:hover {
+    filter: brightness(80%); /* 改變亮度，可自行調整 */
+  }
+  
+  .image-combine img:hover::after {
+    content: attr(alt); /* 顯示圖片的 alt 文字 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8); /* 背景顏色，可自行調整 */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1;
+  }
+  
+  .card p {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  
 
 .card {
     /*background-color: white;*/
