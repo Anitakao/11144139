@@ -3,10 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>index</title>
     <link rel="stylesheet" href="11144139.css">
+    <script src="11144139.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Edu+TAS+Beginner:wght@500&family=Oxygen&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header>
+      <h1>MyWebsite 個人網站</h1>
+    </header>
+
+  
+
+    <nav>
+      <a href="#about">&nbsp About me &nbsp;</a>
+      <a href="#skill">&nbsp 專業技能 &nbsp;</a>
+      <a href="#project">&nbsp 大學成果 &nbsp;</a>
+      <a href="#school">&nbsp 學習經歷 &nbsp;</a>
+      <a href="#internship">&nbsp 實習經歷 &nbsp;</a>
+      <a href="#contact">&nbsp 聯絡資訊 &nbsp;</a>
+    </nav>
+
+    <main>
+    <article>
+      <section>
+          <a name="about"><p class="aboutme"></p></a>
+
+       <div class="card">
+        <h2>關於我 About me</h2>
+        <img src="image/self_img.jpg" style="width: 200px; ; height: 200px;display: block; margin: 0 auto;border-radius: 50%;">
+        <div>
+            <p class="self">
+                Name : 高嘉嬨 Kao,ChiaTzu<br>
+                Birthday : 2003/09/04<br>
+                Gender : 女<br>
+                Constellation:處女座<br>
+              
+                <span class="interest-text" onclick="toggleInterests()">My Interests（Click me!!）</span>
+                <div id="interests-container" class="interests-container">
+                    <p>
+                        我喜歡閱讀小說（輕小說、推理小說等）<br>
+                        音樂：主要聽英文、日文、韓文歌曲<br>
+                        最喜歡看動漫，不只日本還有韓國、歐美等，都有涉略。
+                        ——「看動漫無國界」<br>
+                    </p>
+                </div>
+            </p>
+        </div>
+       </div>
+<!--進度條-->
+        <section id="skill" class="card">
+          <h2>專業技能</h2>
+          <img src="https://picsum.photos/300/200?random=1" />
+          <p>
+            JAVA
+          </p>
+          <p>
+              Python
+          </p>
+          <p>
+              HTML
+          </p>
+        </section>
+
+        <section id="project" class="card">
+          <h2>大學成果</h2>
+          <img src="https://picsum.photos/300/200?random=2" />
+          <p>
+              大一上：這下好啦
+          </p>
+          <p>
+              大一下：水蜜桃
+          </p>
+        </section>
+        
+        <section id="school" class="card">
+          <h2>高中學習經歷</h2>
+              <img src="https://picsum.photos/300/200?random=2" />
+              <p>
+                  我高中的東東
+               </p>
+       </section>
+     
+       <section id="internship" class="card">
+          <h2>實習經驗</h2>
+           <img src="https://picsum.photos/300/200?random=2" />
+            <p>
+              暑假實習經驗和成果
+          </p>
+      </section>>
+    </main>
+    <div class="clearfix"></div>
+
+    <footer id="contact">
+      <h5>Copyrgiht @ 2022 All rights reserved</h5>
+      <h5 class="contact1">My E-mail : <mailto:anitakao6321@gmail.com>anitakao6321@gmail.com</mailto:anitakao6321@gmail.com></h5>
+    </footer>
+  </article>
+
+
+
+</body>
+</html>
+<!--<body>
     <header>
         <h1>MyWebsite 個人網站</h1>
       </header>
@@ -66,4 +167,4 @@
         <h5>Copyrgiht @ 2022 All rights reserved</h5>
       </footer>
 </body>
-</html>
+</html>-->
