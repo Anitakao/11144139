@@ -44,6 +44,41 @@ nav a:hover {
     color: white;
 }
 
+.self_img{
+  width: 200px; 
+  height: 200px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-left: 70px;
+  border-radius: 30%;
+  position: absolute;
+  left: 120px;
+}
+
+
+
+.pic{
+  position: relative;
+  display: inline-block;
+  
+}
+
+.pic img{
+  position:absolute;
+  top: 50%;
+  
+  transform: translate(-50%, -50%);
+  -webkit-transition: opacity 2s ease-in-out;
+  -moz-transition: opacity 2s ease-in-out;
+  -o-transition: opacity 2s ease-in-out;
+  transition: opacity 2s ease-in-out;
+}
+
+.pic img:last-child:hover{
+  opacity: 0;
+}
+
 p{
     font-family: 'Edu TAS Beginner', cursive;
     font-size: x-large;
@@ -52,6 +87,7 @@ p{
 h2{
     font-size: 60px;
     font-family: 'Edu TAS Beginner', cursive;
+    margin-bottom: 100px; 
 }
 
 h3{
@@ -134,22 +170,28 @@ main {
     /*background-color: white;*/
     padding: 20px;
     width: 100%;
-    margin: 10px;
+    margin: 35px,15px;
     border-radius: 15px;
     background-image: url(image/card_img.jpg);
     background-size: cover;
     text-align: center;
+    
+    align-items: center; 
+    
+}
+section {
+  margin-bottom: 20px;
 }
 
 .card img{
     display: block;
-    margin: 0 auto;
+    margin:  auto;
 }
 
 .card1 {
     /*background-color: white;*/
     padding: 20px;
-    margin: 20px 10px;
+    margin: 15px 5px;
     border-radius: 15px;
     background-image: url(image/card_img.jpg);
     background-size: cover;
@@ -268,8 +310,19 @@ main {
 
 .self{
   font-size: x-large;
-    font-family: 'Edu TAS Beginner', cursive;
+  font-family: 'Edu TAS Beginner', cursive;
 }
+
+.self-info {
+  display: inline-block; 
+  vertical-align: top; 
+  margin-top: 150px;
+   
+}
+
+
+
+
 .internship_img{
     width: 60%;
     height: 80%;
