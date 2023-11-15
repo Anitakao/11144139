@@ -15,7 +15,8 @@ body {
 
 
 header {
-    background: url('image/background3.jpg') center/cover no-repeat;color: white;
+    background: url('image/background3.jpg') center/cover no-repeat;
+    color: white;
     text-align: center;
     padding: 250px;
     margin: 0px;
@@ -45,7 +46,7 @@ nav a:hover {
 
 p{
     font-family: 'Edu TAS Beginner', cursive;
-    font-size: large;
+    font-size: x-large;
 }
 
 h2{
@@ -59,15 +60,17 @@ h3{
   }
 
 h4{
+  font-size: larger;
     font-family: 'Edu TAS Beginner', cursive;
 
 }
 
 footer {
     background-color: #a8835d;
-    color: #444444;
+    color: #E7E7DB;
     text-align: center;
     padding: 10px;
+    font-size: larger;
 }
 
 main {
@@ -159,7 +162,7 @@ main {
 
 .interests-container {
     display: none;
-    max-width: 400px;
+    max-width: 500px;
     margin: 0 auto;
 }
 
@@ -189,8 +192,10 @@ main {
 .text2 {
     background-color: white;
     padding: 15px;
-    border-radius: 5px;
+    border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Edu TAS Beginner', cursive;
+    font-size: x-large;
 }
 
 .text3{
@@ -218,7 +223,7 @@ main {
   .progress-moved .progress-bar1 {
     width: 75%;
     background-color: #35523c;
-    animation: progressAnimation 6s;
+    animation: progressAnimation 6s infinite;
   }
    
   .progress-bar2 {
@@ -232,7 +237,7 @@ main {
   .progress-moved .progress-bar2 {
     width: 65%;
     background-color: #35523c;
-    animation: progressAnimation 6s;
+    animation: progressAnimation 6s infinite;
   }
 
   .progress-bar3 {
@@ -246,7 +251,7 @@ main {
   .progress-moved .progress-bar3 {
     width: 80%;
     background-color: #35523c;
-    animation: progressAnimation 6s;
+    animation: progressAnimation 6s infinite;
   }
    
 @keyframes progressAnimation {
@@ -282,12 +287,6 @@ main {
   .show-info:hover + .info-box {
     display: block;
   }
-
-
-
-  
-  
-
 
 article {
     float: left;
