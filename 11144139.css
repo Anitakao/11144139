@@ -250,6 +250,17 @@ main {
   .show-info:hover + .info-box {
     display: block;
   }
+
+h4{
+    font-family: 'Edu TAS Beginner', cursive;
+}
+
+  .text2 {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
   
 
 
@@ -269,12 +280,47 @@ aside {
     height: 50px;
     border-radius: 50%;
   }
+
+  .hidden {
+    display: none;
+  }
+  .show {
+    display: block;
+    /* 可以添加一些過渡效果，使顯示/隱藏更平滑 */
+    transition: display 0.5s ease;
+  }
+  
+  #description {
+    border: 1px solid #000;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  #description2 {
+    border: 1px solid #000;
+    padding: 10px;
+    margin-top: 10px;
+  }
   
 
 
 
 .clearfix {
     clear: both;
+}
+
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+#scrollToTopBtn img {
+    width: 50px; /* 調整圖片寬度 */
+    height: 60px; /* 調整圖片高度 */
+    border-radius: 50%; /* 圓形圖片 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 陰影效果 */
 }
 
 @media screen and (max-width:800px) {
