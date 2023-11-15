@@ -2,16 +2,6 @@ function toggleInterests() {
     var interestsContainer = document.getElementById("interests-container");
     interestsContainer.style.display = (interestsContainer.style.display === "none" || interestsContainer.style.display === "") ? "block" : "none";
 }
-
-function scrollToSection(sectionId) {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      window.scrollTo({
-        top: section.offsetTop,
-        behavior: 'smooth',
-      });
-    }
-  }
   
 document.addEventListener("DOMContentLoaded", function () {
     var showInfoText = document.querySelector('.show-info');
@@ -48,5 +38,10 @@ function toggleDescription() {
 
 function toggleDescription2() {
     var description2 = document.getElementById('description2');
+    description2.style.display = (description2.style.display === 'none' || description2.style.display === '') ? 'block' : 'none';
+  }
+
+  function toggleDescription3() {
+    var description2 = document.getElementById('description3');
     description2.style.display = (description2.style.display === 'none' || description2.style.display === '') ? 'block' : 'none';
   }

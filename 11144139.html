@@ -11,20 +11,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Edu+TAS+Beginner:wght@500&family=Oxygen&display=swap" rel="stylesheet">
 </head>
 <body>
+  
   <header>
       <h1>MyWebsite 個人網站</h1>
   </header>
-
   
+  <a href="https://www.cursors-4u.com/cursor/2020/12/01/among-us-yellow-crewmate.html" target="_blank" title="Among Us - Yellow Crewmate">
+    <img src="https://cur.cursors-4u.net/cursor.png" border="0" alt="Among Us - Yellow Crewmate" style="position:absolute; top: 0px; right: 0px;" />
+  </a>
 
   <nav>
-    <a href="#about" onclick="scrollToSection('about')">About me</a>
-    <a href="#skill" onclick="scrollToSection('skill')">專業技能</a>
-    <a href="#project1" onclick="scrollToSection('project')">大學成果-大一上</a>
-    <a href="#project2" onclick="scrollToSection('project')">大學成果-大一下</a>
-    <a href="#school" onclick="scrollToSection('school')">學習經歷</a>
-    <a href="#internship" onclick="scrollToSection('internship')">實習經歷</a>
-    <a href="#contact" onclick="scrollToSection('contact')">聯絡資訊</a>
+    <a href="#about" >About me</a>
+    <a href="#skill" >專業技能</a>
+    <a href="#project1" >大學成果-大一上</a>
+    <a href="#project2">大學成果-大一下</a>
+    <a href="#school" >學習經歷</a>
+    <a href="#internship" >實習經歷</a>
+    <a href="#contact" >聯絡資訊</a>
   </nav>
   
 
@@ -177,11 +180,15 @@
         <a href="https://jlovewedding.love/price-of-wedding-photography/" target="_blank">
           <img class="buttom_img" src="image/buttom_img8.jpg">
         </a>
-        <p class="show-info">
-          暑假實習心得（LOOK ME!!）
-        </p>
+        <div class="assignment" onclick="toggleDescription3()">
+          <p class="text3">我的實習心得（CLICK ME!!!）</p>
+          <div id="description3" class="hidden">
+            <!-- 第一份心得內容 -->
+            <p >在升上大一的暑假期間我去我父母的公司進行實習，</p>
+          </div>
+        </div>
 
-        在升上大一的暑假期間我去我父母的公司進行實習，
+        
       </section>
     </article>
     <aside id="contact" class="card1">
