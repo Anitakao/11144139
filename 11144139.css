@@ -15,12 +15,12 @@ body {
 
 
 header {
-    background-color: #878a5d;
-    color: white;
+    background: url('image/background3.jpg') center/cover no-repeat;color: white;
     text-align: center;
-    padding: 20px;
+    padding: 250px;
     margin: 0px;
     font-family: 'Edu TAS Beginner', cursive;
+    font-size: x-large;
 }
 
 nav {
@@ -45,9 +45,11 @@ nav a:hover {
 
 p{
     font-family: 'Edu TAS Beginner', cursive;
+    font-size: large;
 }
 
 h2{
+    font-size: 60px;
     font-family: 'Edu TAS Beginner', cursive;
 }
 
@@ -192,7 +194,7 @@ main {
 
 .text3{
     font-weight: bolder;
-    font-size: largerg;
+    font-size: larggerg;
 }
 
   
